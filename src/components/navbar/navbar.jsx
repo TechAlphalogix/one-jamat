@@ -117,7 +117,7 @@ export const Nav = () => {
                       <ul className="space-y-4">
                         <li>
                           <Link
-                            href="/home"
+                            href="/"
                             aria-label="home"
                             title="home"
                             className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-[#ff6968]"
