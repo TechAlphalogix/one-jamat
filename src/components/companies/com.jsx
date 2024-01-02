@@ -72,10 +72,10 @@ export default function CompaniesList() {
                                         ))}
                                     </div>
                                     <div className="btns flex flex-wrap  space-x-1 py-[10px]">
-                                        <a target='_blank' rel='norefferer' className='text-[#2947A9] border-2 border-[#2947A9] px-[10px] md:px-[26px] rounded-md md:mx-[10px] py-[7px]' href={company.link}>
+                                        <a target='_blank' rel='norefferer' className='text-[#2947A9] border-2 border-[#2947A9] px-[10px] xl:px-[26px] rounded-md md:mx-[10px] py-[7px]' href={company.link}>
                                             Visit Website
                                         </a>
-                                        <a target='_blank' rel='norefferer' className='bg-[#2947A9] border-2 border-[#2947A9] text-white px-[10px] md:px-[26px] rounded-md md:mx-[10px] py-[7px]' href={company.link1}>
+                                        <a target='_blank' rel='norefferer' className='bg-[#2947A9] border-2 border-[#2947A9] text-white px-[10px] xl:px-[26px] rounded-md md:mx-[10px] py-[7px]' href={company.link1}>
                                             View Profile
                                         </a>
                                     </div>
