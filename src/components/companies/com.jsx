@@ -28,10 +28,11 @@ export default function CompaniesList() {
             link1: 'https://drive.google.com/file/d/1K5vts4n1U5anICZG-ys7UIxnwzazVJRH/view',
         },
         {
-            name: 'uConnect',
+            name: 'Pine tech',
             description: 'IdeoMetriX, founded in 2020, has rapidly evolved into a dynamic design and tech firm with a global footprint. In its three-year....',
             domains: ['UX Design', 'Graphic Design', 'Digital Marketing', 'Software Developement'],
             link: 'https://uconnect.pk/',
+            link1: 'https://drive.google.com/file/d/1_JZiOFM3nkLl5eWF6ueJWgJFbRVF8GBD/view',
         },
         // Add three more company objects with similar structure
         // ...
