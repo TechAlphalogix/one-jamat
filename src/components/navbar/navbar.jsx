@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-
 export const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -38,9 +37,8 @@ export const Nav = () => {
       <div className={topDivClasses}>
         <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div className="relative flex items-center justify-end">
-            
             <ul className="flex items-center hidden space-x-8 lg:flex">
-            <li>
+              <li>
                 <Link
                   href="/"
                   aria-label="Home"
@@ -145,7 +143,6 @@ export const Nav = () => {
                             Companies
                           </Link>
                         </li>
-                        
                       </ul>
                     </nav>
                   </div>
