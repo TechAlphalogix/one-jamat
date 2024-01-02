@@ -33,6 +33,7 @@ export default function CompaniesList() {
         },
         // Add three more company objects with similar structure
         // ...
+        
     ];
 
     const companyLogos = {
