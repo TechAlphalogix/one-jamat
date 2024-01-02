@@ -19,7 +19,7 @@ export default function CompaniesList() {
             description: 'IdeoMetriX, founded in 2020, has rapidly evolved into a dynamic design and tech firm with a global footprint. In its three-year....',
             domains: ['UX Design', 'Graphic Design', 'Digital Marketing', 'Software Developement'],
             link: 'https://techalphalogix.com/',
-            link1: '',
+            link1: 'https://google.com',
         },
         {
             name: 'Techzoid',
