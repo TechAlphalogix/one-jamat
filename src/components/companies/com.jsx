@@ -11,19 +11,21 @@ export default function CompaniesList() {
             description: 'IdeoMetriX, founded in 2020, has rapidly evolved into a dynamic design and tech firm with a global footprint. In its three-year....',
             domains: ['UX Design', 'Graphic Design', 'Digital Marketing', 'Software Developement'],
             link: 'https://www.ideometrix.com/',
-            link1: 'https://drive.google.com/file/d/1K5vts4n1U5anICZG-ys7UIxnwzazVJRH/view',
+            link1: 'https://drive.google.com/open?id=1W1QDt29l_BekLcU4MzO48oCqB_6Ah-d5&authuser=0',
         },
         {
             name: 'Techalphalogix',
             description: 'IdeoMetriX, founded in 2020, has rapidly evolved into a dynamic design and tech firm with a global footprint. In its three-year....',
             domains: ['UX Design', 'Graphic Design', 'Digital Marketing', 'Software Developement'],
             link: 'https://techalphalogix.com/',
+            link1: '',
         },
         {
             name: 'Techzoid',
             description: 'IdeoMetriX, founded in 2020, has rapidly evolved into a dynamic design and tech firm with a global footprint. In its three-year....',
             domains: ['UX Design', 'Graphic Design', 'Digital Marketing', 'Software Developement'],
             link: 'https://techzoid.pk/',
+            link1: 'https://drive.google.com/file/d/1K5vts4n1U5anICZG-ys7UIxnwzazVJRH/view',
         },
         {
             name: 'uConnect',
@@ -68,7 +70,7 @@ export default function CompaniesList() {
                                             <p className='leading-[18.77px] font-normal text-[#2947A9] bg-[#eaedf6] px-[5px] mb-[10px] py-[10px] mt-[10px] rounded-[50px]  mx-[10px]' key={index}>{domain}</p>
                                         ))}
                                     </div>
-                                    <div className="btns py-[10px]">
+                                    <div className="btns flex flex-wrap py-[10px]">
                                         <a target='_blank' rel='norefferer' className='text-[#2947A9] border-2 border-[#2947A9] px-[26px] rounded-md mx-[10px] py-[7px]' href={company.link}>
                                             Visit Website
                                         </a>
