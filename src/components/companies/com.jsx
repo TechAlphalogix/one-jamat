@@ -63,12 +63,12 @@ export default function CompaniesList() {
                                     <Image className='hover:scale-110 transition-all' src={companyLogos[company.name]} width={136} alt={company.name} />
                                 </div>
                                 <div className="info ps-[10px]  w-full xl:w-3/5 ">
-                                <h3 className="font-semibold text-[24px] pt-[5px] leading-[28px]">{company.name}</h3>
-                                    <h4 className="font-normal text-[16px] pt-[10px]">{company.description}</h4>
+                                <h3 className="font-semibold text-[24px]  pt-[5px] leading-[28px]">{company.name}</h3>
+                                    <h4 className="font-normal text-[16px] lg:text-[14px] pt-[10px]">{company.description}</h4>
                                     <h4 className="font-semibold text-[18px] leading-[26px] pt-[10px]">Domains</h4>
                                     <div className="dom flex flex-wrap flex-row">
                                         {company.domains.map((domain, index) => (
-                                            <p className='leading-[18.77px] font-normal text-[#2947A9] bg-[#eaedf6] px-[5px] mb-[5px] py-[10px] mt-[5px] rounded-[50px]  me-[10px]' key={index}>{domain}</p>
+                                            <p className='leading-[18.77px] font-normal text-[#2947A9] text-[16px] xl:text-[14px] bg-[#eaedf6] px-[5px] mb-[5px] py-[10px] mt-[5px] rounded-[50px]  me-[10px]' key={index}>{domain}</p>
                                         ))}
                                     </div>
                                     <div className="btns flex flex-wrap  space-x-1  py-[10px]">
