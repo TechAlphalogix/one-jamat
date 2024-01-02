@@ -26,10 +26,10 @@ export default function CompaniesList() {
             link: 'https://techzoid.pk/',
         },
         {
-            name: 'IdeoMatrix',
+            name: 'uConnect',
             description: 'IdeoMetriX, founded in 2020, has rapidly evolved into a dynamic design and tech firm with a global footprint. In its three-year....',
             domains: ['UX Design', 'Graphic Design', 'Digital Marketing', 'Software Developement'],
-            link: 'linkone',
+            link: 'https://uconnect.pk/',
         },
         // Add three more company objects with similar structure
         // ...
