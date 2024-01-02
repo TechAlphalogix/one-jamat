@@ -56,12 +56,12 @@ export default function CompaniesList() {
                         {companyData.map((company, index) => (
                             <div
                                 key={index}
-                                className="w-full mx-auto bg-white shadow-2xl p-[20px] rounded-[4px]  flex flex-row my-1 sm:w-full  md:w-full md:my-1  lg:w-[47%] "
+                                className="w-full mx-auto bg-white shadow-2xl p-[20px] rounded-[4px]  flex flex-col md:flex-row my-1 sm:w-full  md:w-full md:my-1  lg:w-[47%] "
                             >
-                                <div className="logo flex justify-center items-center bg-slate-100 w-2/5">
+                                <div className="logo flex justify-center items-center bg-slate-100 w-full md:w-2/5">
                                     <Image src={companyLogos[company.name]} alt={company.name} />
                                 </div>
-                                <div className="info ps-[10px] py-[20px] w-3/5 ">
+                                <div className="info ps-[10px] py-[20px] w-full md:w-3/5 ">
                                 <h3 className="font-semibold text-[24px] pt-[10px] leading-[28px]">{company.name}</h3>
                                     <h4 className="font-normal text-[16px] pt-[10px]">{company.description}</h4>
                                     <h4 className="font-semibold text-[18px] leading-[26px] pt-[10px]">Domains</h4>
