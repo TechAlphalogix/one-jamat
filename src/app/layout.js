@@ -14,7 +14,16 @@ const work = Work_Sans({
 
 export const metadata = {
   title: 'One Jamat',
-  description: 'bla bla',
+  description: 'One jamat Software companies... continue',
+
+  keywords: ['keyword1', 'keywords2'],
+  author: 'Ali Shan',
+  robots: 'index, follow',
+  images: [
+    {
+      // url: ,
+    },
+  ],
 }
 
 export default function RootLayout({ children }) {
