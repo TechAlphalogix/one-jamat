@@ -18,10 +18,10 @@ export default function CompaniesList() {
       description:
         "CalibreOn International is a prominent figure in the Business Process Outsourcing (BPO) sector, on a mission....",
       domains: [
-        "UX Design",
-        "Graphic Design",
-        "Digital Marketing",
-        "Software Developement",
+        "Accounting",
+        "Ecommerce Managment",
+        "Film/2D-3D Animation",
+        "UI/UX Web dev",
       ],
       link: "https://www.calibreon.com.pk/",
       link1:
