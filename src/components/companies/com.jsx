@@ -150,7 +150,7 @@ export default function CompaniesList() {
         "Bookkeeping",
         "Tax Services",
       ],
-      link: "http://www.cloudlem.com",
+      link: "http://www.standardizedaccounting.com",
       link1:
         "https://drive.google.com/file/d/1ZsrYNDvIWrhFXdIeHeMsQYs7CDRLspOc/view?usp=drive_open",
     },
