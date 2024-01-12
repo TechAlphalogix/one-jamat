@@ -10,7 +10,6 @@ import CLD from "../../assets/cloudlem.png";
 import CALI from "../../assets/cali.png";
 import SASI from "../../assets/sassi.png";
 
-
 export default function CompaniesList() {
   const companyData = [
     {
@@ -24,10 +23,9 @@ export default function CompaniesList() {
         "UI/UX Web dev",
       ],
       link: "https://www.calibreon.com.pk/",
-      link1:
-        "https://google.com",
+      link1: "https://google.com",
     },
-    
+
     {
       name: "IdeoMatrix",
       description:
@@ -42,20 +40,21 @@ export default function CompaniesList() {
       link1:
         "https://drive.google.com/open?id=1W1QDt29l_BekLcU4MzO48oCqB_6Ah-d5&authuser=0",
     },
-    
     {
-      name: "Techalphalogix",
+      name: "Uconnect",
       description:
-        "Tech AlphaLogix Pvt. Ltd. is a technology-oriented company specializing in web development and design....",
+        "uConnect, an AI-driven tech startup-centric ecosystem in Gilgit-Baltistan, is a hub of innovation....",
       domains: [
-        "Web Application",
-        "UI/UX Design",
-        "SaaS Development",
-        "Social media marketing",
+        "UX Design",
+        "Graphic Design",
+        "Digital Marketing",
+        "Software Developement",
       ],
-      link: "https://techalphalogix.com/",
-      link1: "https://drive.google.com/file/d/1bUeWPsYo6Plsenoj05ql57hXb9e87bgL/view",
+      link: "http://uconnect.pk/",
+      link1:
+        "https://drive.google.com/file/d/1Vuo92FOr6AOPeEtV2gfPzCdZe9pnhsuA/view",
     },
+
     {
       name: "PineTechnologies",
       description:
@@ -70,20 +69,20 @@ export default function CompaniesList() {
       link1:
         "https://drive.google.com/file/d/1_JZiOFM3nkLl5eWF6ueJWgJFbRVF8GBD/view",
     },
-    
+
     {
-      name: "Uconnect",
+      name: "Techalphalogix",
       description:
-        "uConnect, an AI-driven tech startup-centric ecosystem in Gilgit-Baltistan, is a hub of innovation....",
+        "Tech AlphaLogix Pvt. Ltd. is a technology-oriented company specializing in web development and design....",
       domains: [
-        "UX Design",
-        "Graphic Design",
-        "Digital Marketing",
-        "Software Developement",
+        "Web Application",
+        "UI/UX Design",
+        "SaaS Development",
+        "Social media marketing",
       ],
-      link: "http://uconnect.pk/",
+      link: "https://techalphalogix.com/",
       link1:
-        "https://drive.google.com/file/d/1Vuo92FOr6AOPeEtV2gfPzCdZe9pnhsuA/view",
+        "https://drive.google.com/file/d/1bUeWPsYo6Plsenoj05ql57hXb9e87bgL/view",
     },
     {
       name: "Techzoid",
@@ -126,7 +125,7 @@ export default function CompaniesList() {
       link1:
         "https://drive.google.com/file/d/1lNdJCPSNKBGSXTNnQ_wVZepCujoccfeE/view",
     },
-    
+
     {
       name: "Cloudlem",
       description:
@@ -145,11 +144,7 @@ export default function CompaniesList() {
       name: "SASI",
       description:
         "SASI is a professional freelance and Outsourced accounting, financial reporting and consulting services provider....",
-      domains: [
-        "Accounting",
-        "Bookkeeping",
-        "Tax Services",
-      ],
+      domains: ["Accounting", "Bookkeeping", "Tax Services"],
       link: "http://www.standardizedaccounting.com",
       link1:
         "https://drive.google.com/file/d/1ZsrYNDvIWrhFXdIeHeMsQYs7CDRLspOc/view?usp=drive_open",
