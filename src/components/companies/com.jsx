@@ -53,6 +53,20 @@ export default function CompaniesList() {
       link1: "https://drive.google.com/file/d/1bUeWPsYo6Plsenoj05ql57hXb9e87bgL/view",
     },
     {
+      name: "Uconnect",
+      description:
+        "uConnect, an AI-driven tech startup-centric ecosystem in Gilgit-Baltistan, is a hub of innovation....",
+      domains: [
+        "UX Design",
+        "Graphic Design",
+        "Digital Marketing",
+        "Software Developement",
+      ],
+      link: "http://uconnect.pk/",
+      link1:
+        "https://drive.google.com/file/d/1Vuo92FOr6AOPeEtV2gfPzCdZe9pnhsuA/view",
+    },
+    {
       name: "PineTechnologies",
       description:
         "We are reliable source for top-quality software solutions and branding services. We are dedicated to delivering excellence in....",
@@ -94,6 +108,7 @@ export default function CompaniesList() {
       link1:
         "https://drive.google.com/file/d/1lNdJCPSNKBGSXTNnQ_wVZepCujoccfeE/view",
     },
+    
     {
       name: "Cloudlem",
       description:
@@ -118,6 +133,7 @@ export default function CompaniesList() {
     DesignBytesInternational: DBI,
     Techscape: TSC,
     Cloudlem: CLD,
+    Uconnect: UCO,
   };
 
   return (
