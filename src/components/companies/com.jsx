@@ -50,7 +50,7 @@ export default function CompaniesList() {
         "Software Developement",
       ],
       link: "https://techalphalogix.com/",
-      link1: "https://google.com",
+      link1: "https://drive.google.com/file/d/1bUeWPsYo6Plsenoj05ql57hXb9e87bgL/view",
     },
     {
       name: "PineTechnologies",
@@ -78,7 +78,7 @@ export default function CompaniesList() {
       ],
       link: "https://designbytesinternational.com/",
       link1:
-        "https://drive.google.com/file/d/1_JZiOFM3nkLl5eWF6ueJWgJFbRVF8GBD/view",
+        "https://drive.google.com/file/d/1Vu0HrerUfTesZgbOZlp5SQOCsI5aJ4pr/view",
     },
     {
       name: "Techscape",
@@ -92,7 +92,7 @@ export default function CompaniesList() {
       ],
       link: "https://techscape.pk/",
       link1:
-        "https://drive.google.com/file/d/1_JZiOFM3nkLl5eWF6ueJWgJFbRVF8GBD/view",
+        "https://drive.google.com/file/d/1lNdJCPSNKBGSXTNnQ_wVZepCujoccfeE/view",
     },
     {
       name: "Cloudlem",
@@ -106,7 +106,7 @@ export default function CompaniesList() {
       ],
       link: "http://www.cloudlem.com",
       link1:
-        "https://drive.google.com/file/d/1_JZiOFM3nkLl5eWF6ueJWgJFbRVF8GBD/view",
+        "https://drive.google.com/file/d/1ZsrYNDvIWrhFXdIeHeMsQYs7CDRLspOc/view?usp=drive_open",
     },
   ];
 
