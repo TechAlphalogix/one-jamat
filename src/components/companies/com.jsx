@@ -4,6 +4,10 @@ import Alpha from "../../assets/alpha.png";
 import Pine from "../../assets/pine.png";
 import UCO from "../../assets/uco.png";
 import Tz from "../../assets/tz.png";
+import DBI from "../../assets/dbi.png";
+import TSC from "../../assets/tscape.png";
+import CLD from "../../assets/cloudlem.png";
+
 
 export default function CompaniesList() {
   const companyData = [
@@ -22,19 +26,6 @@ export default function CompaniesList() {
         "https://drive.google.com/open?id=1W1QDt29l_BekLcU4MzO48oCqB_6Ah-d5&authuser=0",
     },
     {
-      name: "Techalphalogix",
-      description:
-        "IdeoMetriX, founded in 2020, has rapidly evolved into a dynamic design and tech firm with a global footprint. In its three-year....",
-      domains: [
-        "UX Design",
-        "Graphic Design",
-        "Digital Marketing",
-        "Software Developement",
-      ],
-      link: "https://techalphalogix.com/",
-      link1: "https://google.com",
-    },
-    {
       name: "Techzoid",
       description:
         "Our IT company is dedicated to helping businesses and organizations enhance their online presence and capabilities. We offer a....",
@@ -47,6 +38,19 @@ export default function CompaniesList() {
       link: "https://techzoid.pk/",
       link1:
         "https://drive.google.com/file/d/1K5vts4n1U5anICZG-ys7UIxnwzazVJRH/view",
+    },
+    {
+      name: "Techalphalogix",
+      description:
+        "IdeoMetriX, founded in 2020, has rapidly evolved into a dynamic design and tech firm with a global footprint. In its three-year....",
+      domains: [
+        "UX Design",
+        "Graphic Design",
+        "Digital Marketing",
+        "Software Developement",
+      ],
+      link: "https://techalphalogix.com/",
+      link1: "https://google.com",
     },
     {
       name: "PineTechnologies",
@@ -62,6 +66,48 @@ export default function CompaniesList() {
       link1:
         "https://drive.google.com/file/d/1_JZiOFM3nkLl5eWF6ueJWgJFbRVF8GBD/view",
     },
+    {
+      name: "DesignBytesInternational",
+      description:
+        "Design Bytes International is a creative freelance company operating from Gilgit Baltistan, providing freelance services....",
+      domains: [
+        "UX Design",
+        "Graphic Design",
+        "Digital Marketing",
+        "Software Developement",
+      ],
+      link: "https://designbytesinternational.com/",
+      link1:
+        "https://drive.google.com/file/d/1_JZiOFM3nkLl5eWF6ueJWgJFbRVF8GBD/view",
+    },
+    {
+      name: "Techscape",
+      description:
+        "Primarily TechScape is an ED-Tech company that operates with the vision to equip future generations for the future of....",
+      domains: [
+        "UX Design",
+        "Graphic Design",
+        "Digital Marketing",
+        "Software Developement",
+      ],
+      link: "https://techscape.pk/",
+      link1:
+        "https://drive.google.com/file/d/1_JZiOFM3nkLl5eWF6ueJWgJFbRVF8GBD/view",
+    },
+    {
+      name: "Cloudlem",
+      description:
+        "Cloudlem is an emerging DevOps consulting company with a wealth of experience in supporting customers globally to....",
+      domains: [
+        "UX Design",
+        "Graphic Design",
+        "Digital Marketing",
+        "Software Developement",
+      ],
+      link: "http://www.cloudlem.com",
+      link1:
+        "https://drive.google.com/file/d/1_JZiOFM3nkLl5eWF6ueJWgJFbRVF8GBD/view",
+    },
   ];
 
   const companyLogos = {
@@ -69,6 +115,9 @@ export default function CompaniesList() {
     Techalphalogix: Alpha,
     PineTechnologies: Pine,
     Techzoid: Tz,
+    DesignBytesInternational: DBI,
+    Techscape: TSC,
+    Cloudlem: CLD,
   };
 
   return (
