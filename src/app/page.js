@@ -1,7 +1,32 @@
-import CompaniesList from '@/components/companies/com'
-import Image from 'next/image'
+"use client"
+import { useState } from 'react';
+import CompaniesList from '@/components/companies/com';
+import Image from 'next/image';
 
 export default function Home() {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [experience, setExperience] = useState('Experienced');
+  const [region, setRegion] = useState('Gilgit');
+  const [searchResults, setSearchResults] = useState([]);
+
+
+  const handleSearch = () => {
+    // adding console for all above to check
+    console.log('Search term:', searchTerm);
+    console.log('Experience:', experience);
+    console.log('Region:', region);
+    // You can make API 
+    try {
+      //  this is Mongo URI 
+      // mongodb+srv://biibishahzia0:one_jamat123@cluster0.3mqatpx.mongodb.net/
+
+      // Assuming your API returns an array of search results
+      setSearchResults(data);
+    } catch (error) {
+      console.error('Error fetching search results:', error);
+    }
+  };
+
   return (
     <>
       <header className='bg-[url("../../public/bg-big.jpg")] text-white '>
@@ -13,28 +38,48 @@ export default function Home() {
           </div>
           <div className='bg-white py-6 px-6 md:space-y-0 space-y-2 justify-around items-center flex flex-col md:flex-row w-full'>
             <div className='md:w-[50%] w-full'>
-              <input type='text' className='bg-white border w-full py-3 px-2 border-gray-400 rounded-lg text-gray-800 focus:outline-none' placeholder='Search for domain like UX Design, Graphic Design, web dev etc' />
+              <input
+                type='text'
+                className='bg-white border w-full py-3 px-2 border-gray-400 rounded-lg text-gray-800 focus:outline-none'
+                placeholder='Search for domain like UX Design, Graphic Design, web dev etc'
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
             </div>
             <div className='md:w-[15%] mt-0 w-full'>
-              <select className='py-3 px-2 w-full bg-white focus:outline-none text-slate-500 border border-gray-400 rounded-lg' name="Experience" id="Experience">
-                <option value="Experienced">Experienced</option>
-                <option value="Basic">Basic</option>
-                <option value="Intermediate">Intermediate</option>
+              <select
+                className='py-3 px-2 w-full bg-white focus:outline-none text-slate-500 border border-gray-400 rounded-lg'
+                name='Experience'
+                id='Experience'
+                value={experience}
+                onChange={(e) => setExperience(e.target.value)}
+              >
+                <option value='Experienced'>Experienced</option>
+                <option value='Basic'>Basic</option>
+                <option value='Intermediate'>Intermediate</option>
               </select>
             </div>
             <div className='md:w-[15%] mt-0 w-full'>
-              <select className='py-3 px-2 w-full bg-white focus:outline-none text-slate-500 border border-gray-400 rounded-lg' name="Region" id="Region">
-                <option value="Gilgit">Gilgit</option>
-                <option value="Islamabad">Islamabad</option>
+              <select
+                className='py-3 px-2 w-full bg-white focus:outline-none text-slate-500 border border-gray-400 rounded-lg'
+                name='Region'
+                id='Region'
+                value={region}
+                onChange={(e) => setRegion(e.target.value)}
+              >
+                <option value='Gilgit'>Gilgit</option>
+                <option value='Islamabad'>Islamabad</option>
               </select>
             </div>
             <div className='md:w-[15%] mt-0 flex justify-center items-center w-full'>
-              <button className='rounded-[8px] bg-[#2947A9] text-white py-[7px] px-[47px]'>Search</button>
+              <button className='rounded-[8px] bg-[#2947A9] text-white py-[7px] px-[47px]' onClick={handleSearch}>
+                Search
+              </button>
             </div>
           </div>
         </div>
       </header>
-      <CompaniesList />
+      <CompaniesList/>
     </>
-  )
+  );
 }
