@@ -38,7 +38,8 @@ export default function CompaniesList() {
       ],
       link: "https://www.ideometrix.com/",
       link1:
-        "https://drive.google.com/open?id=1W1QDt29l_BekLcU4MzO48oCqB_6Ah-d5&authuser=0",
+        "https://drive.google.com/file/d/1gboqADLwD-2g9VmhP0z1jOGJFLe4wvgP/view?usp=sharing"
+      
     },
     {
       name: "Uconnect",
