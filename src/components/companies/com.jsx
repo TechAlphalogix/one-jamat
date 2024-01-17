@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import IMX from "../../assets/imx.png";
 import Alpha from "../../assets/alpha.png";
@@ -9,8 +10,23 @@ import TSC from "../../assets/tscape.png";
 import CLD from "../../assets/cloudlem.png";
 import CALI from "../../assets/cali.png";
 import SASI from "../../assets/sassi.png";
+import SHEDEV from '../../assets/shedev.png'
+import { useState } from "react";
+import Home from "@/app/page";
 
 export default function CompaniesList() {
+  // function for see more button
+  const [expandedDomains, setExpandedDomains] = useState({});
+
+  const toggleDomains = (companyIndex) => {
+    setExpandedDomains((prev) => ({
+      ...prev,
+      [companyIndex]: !prev[companyIndex],
+    }));
+  };
+
+
+
   const companyData = [
     {
       name: "Caliberon",
@@ -19,8 +35,13 @@ export default function CompaniesList() {
       domains: [
         "Accounting",
         "Ecommerce Managment",
-        "Film/2D-3D Animation",
-        "UI/UX Web dev",
+        "Film/2D Animation",
+        "UI/UX Web Dev",
+        "Architectural Design",
+        "Digital Marketing",
+        "3D Animation",
+        "HR Management",
+        "SaaS Developement"
       ],
       link: "https://www.calibreon.com.pk/",
       link1: "https://google.com",
@@ -34,7 +55,13 @@ export default function CompaniesList() {
         "Brand Auditing",
         "Campaign Designing",
         "Digital Marketing",
-        "UI/UX Designing",
+        "UI/UX design",
+        "Web Development",
+        "Software Solutions",
+        "Product/Event Branding ",
+
+
+        
       ],
       link: "https://www.ideometrix.com/",
       link1:
@@ -46,10 +73,17 @@ export default function CompaniesList() {
       description:
         "uConnect, an AI-driven tech startup-centric ecosystem in Gilgit-Baltistan, is a hub of innovation....",
       domains: [
-        "UX Design",
+        "UI/UX Design",
         "Graphic Design",
-        "Digital Marketing",
+        "Digital Strategy",
         "Software Developement",
+        "Product Design",
+        "Mobile App",
+        "3D Animation",
+        "Brand Identity",
+        "Dev Ops",
+
+
       ],
       link: "http://uconnect.pk/",
       link1:
@@ -62,7 +96,7 @@ export default function CompaniesList() {
         "We are reliable source for top-quality software solutions and branding services. We are dedicated to delivering excellence in....",
       domains: [
         "Web Development",
-        "Mobile app Development",
+        "Mobile App Development",
         "CMS Development",
         "UI/UX Design",
       ],
@@ -76,10 +110,16 @@ export default function CompaniesList() {
       description:
         "Tech AlphaLogix Pvt. Ltd. is a technology-oriented company specializing in web development and design....",
       domains: [
-        "Web Application",
+        "Web Development",
         "UI/UX Design",
         "SaaS Development",
         "Social media marketing",
+        "Mobile Development",
+        "Graphic Design",
+        "Data Science",
+        "BlockChain Development",
+        "CMS Development",
+        
       ],
       link: "https://techalphalogix.com/",
       link1:
@@ -90,10 +130,15 @@ export default function CompaniesList() {
       description:
         "Our IT company is dedicated to helping businesses and organizations enhance their online presence and capabilities. We offer a....",
       domains: [
-        "UX Design",
+        "UI/UX Design",
         "Graphic Design",
         "Digital Marketing",
         "Software Solutions",
+        "CMS Development",
+        "Search Engine Optimisation",
+        "Mobile App Development",
+        "Web Development",
+
       ],
       link: "https://techzoid.pk/",
       link1:
@@ -107,6 +152,12 @@ export default function CompaniesList() {
         "Architectural Design",
         "Graphic Design",
         "Accounts and Bookkeeping",
+        "3D Design",
+        "UI/UX Design",
+        "Web Development",
+        "App Development",
+
+
       ],
       link: "https://designbytesinternational.com/",
       link1:
@@ -120,7 +171,11 @@ export default function CompaniesList() {
         "Web Development",
         "App Development",
         "Digital Marketing",
-        "UX/UI",
+        "UX/UI Design",
+        "Game Development",
+        "IT Consultancy",
+        "Graphic Design",    
+
       ],
       link: "https://techscape.pk/",
       link1:
@@ -133,9 +188,13 @@ export default function CompaniesList() {
         "Cloudlem is an emerging DevOps consulting company with a wealth of experience in supporting customers globally to....",
       domains: [
         "Cloud-computing",
-        "DevOps services",
+        "DevOps Services",
         "MERN Stack Development",
-        "Cloud server consultancy",
+        "Cloud Server Consultancy",
+        "Product Design & Development",
+        "Server Management",
+        "Data Administration",
+
       ],
       link: "http://www.cloudlem.com",
       link1:
@@ -145,12 +204,39 @@ export default function CompaniesList() {
       name: "SASI",
       description:
         "SASI is a professional freelance and Outsourced accounting, financial reporting and consulting services provider....",
-      domains: ["Accounting", "Bookkeeping", "Tax Services"],
+      domains: [
+        "Accounting",
+         "Bookkeeping", 
+         "Tax Services"
+        ],
       link: "http://www.standardizedaccounting.com",
       link1:
-        "https://drive.google.com/file/d/1ZsrYNDvIWrhFXdIeHeMsQYs7CDRLspOc/view?usp=drive_open",
+      // adding profile link
+        "",
+    },
+    {
+      name: "SheDev",
+      description:
+            "SheDev is a professional freelance specializing in WordPress, UI/UX design, graphic design, content writing, business consultation, full-stack web development, SEO, social media marketing, and IT support maintenance.",
+     domains:  [ 
+       "Word Press",
+       "UI/UX Design",
+        "Graphic Design",
+        "Content Writing",
+        "Bussiness Consultation",
+        "Full Stack Web Dev",
+        "SEO",
+        "Social Media Marketing",
+        'IT Support Maintainace',
+
+
+      ],
+      link: "https://shedev.pk/",
+      link1:
+        "https://drive.google.com/file/d/1wtzsuBOj5Op7WLCxsHHKjEdmX9Na0ShL/view?usp=sharing",
     },
   ];
+ 
 
   const companyLogos = {
     IdeoMatrix: IMX,
@@ -163,10 +249,13 @@ export default function CompaniesList() {
     Uconnect: UCO,
     Caliberon: CALI,
     SASI: SASI,
+    SheDev: SHEDEV,
   };
 
   return (
+    
     <section className="bg-[#F6F8F7]">
+      
       <div className="container mx-auto lg:flex-row px-6 pb-8 pt-8 sm:pt-10 lg:px-8 lg:pt-[70px]">
         <div className="heading-top text-center">
           <h2 className="font-bold text-[36px] leading-[42px] text-black pb-[56px]">
@@ -199,14 +288,44 @@ export default function CompaniesList() {
                     Domains
                   </h4>
                   <div className="dom flex flex-wrap flex-row">
-                    {company.domains.map((domain, index) => (
+                  {company.domains.slice(0, 4).map((domain, index) => (
                       <p
-                        className="leading-[18.77px] font-normal text-[#2947A9] text-[16px] xl:text-[14px] bg-[#eaedf6] px-[5px] mb-[5px] py-[10px] mt-[5px] rounded-[50px]  me-[10px]"
+                        className="leading-[18.77px] font-normal text-[#2947A9] text-center text-[16px] xl:text-[14px] bg-[#eaedf6] px-[10px] mb-[5px] py-[10px] mt-[5px] rounded-[50px]  me-[10px]"
                         key={index}
                       >
                         {domain}
                       </p>
                     ))}
+                     {company.domains.length > 4 && !expandedDomains[index] && (
+
+                    <a
+                    onClick={() => toggleDomains(index)}
+                      target="_blank"
+                      rel="norefferer"
+                      className="text-[#2947A9] leading-[18.77px] text-center  border-2 border-[#2947A9] px-[10px] md:px-[12x]  rounded-md  py-[7px] cursor-pointer mt-[5px] mb-[5px]"
+                     
+                    >
+                      See More
+                    </a>
+                     )}
+                      {expandedDomains[index] && (
+            <>
+              {company.domains.slice(4).map((domain, domainIndex) => (
+                <p
+                  className="leading-[18.77px] font-normal text-[#2947A9] text-center text-[16px] xl:text-[14px] bg-[#eaedf6] px-[10px] mb-[5px] py-[10px] mt-[5px] rounded-[50px]  me-[10px]"
+                  key={domainIndex + 4}
+                >
+                  {domain}
+                </p>
+              ))}
+              <a
+                onClick={() => toggleDomains(index)}
+                className="text-[#2947A9] leading-[18.77px] text-center border-2 border-[#2947A9] px-[10px] md:px-[12x]  rounded-md  py-[7px] cursor-pointer mt-[5px] mb-[5px]"
+              >
+                See Less
+              </a>
+            </>
+          )}
                   </div>
                   <div className="btns flex flex-wrap  space-x-1  py-[10px]">
                     <a

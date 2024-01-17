@@ -11,25 +11,14 @@ export default function Home() {
 
 
   const handleSearch = () => {
-    // adding console for all above to check
-    console.log('Search term:', searchTerm);
-    console.log('Experience:', experience);
-    console.log('Region:', region);
-    // You can make API 
-    try {
-      //  this is Mongo URI 
-      // mongodb+srv://biibishahzia0:one_jamat123@cluster0.3mqatpx.mongodb.net/
-
-      // Assuming your API returns an array of search results
-      setSearchResults(data);
-    } catch (error) {
-      console.error('Error fetching search results:', error);
-    }
+    
   };
 
   return (
     <>
+
       <header className='bg-[url("../../public/bg-big.jpg")] text-white '>
+       
         <div className='container   w-[95%] md:h-[65vh] justify-center items-center flex  flex-col space-y-4 mx-auto lg:flex-col px-6 pb-8 pt-8 sm:pt-10 lg:px-8 lg:pt-[70px]'>
           <div className='hero-top flex  flex-col space-y-2'>
             <div>
@@ -79,7 +68,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <CompaniesList/>
+      <CompaniesList />
     </>
   );
 }
