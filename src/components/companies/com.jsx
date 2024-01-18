@@ -1,4 +1,5 @@
 'use client'
+import { useState} from "react";
 import Image from "next/image";
 import IMX from "../../assets/imx.png";
 import Alpha from "../../assets/alpha.png";
@@ -11,12 +12,12 @@ import CLD from "../../assets/cloudlem.png";
 import CALI from "../../assets/cali.png";
 import SASI from "../../assets/sassi.png";
 import SHEDEV from '../../assets/shedev.png'
-import { useState } from "react";
 import Home from "@/app/page";
 
 export default function CompaniesList() {
   // function for see more button
   const [expandedDomains, setExpandedDomains] = useState({});
+
 
   const toggleDomains = (companyIndex) => {
     setExpandedDomains((prev) => ({
@@ -111,12 +112,10 @@ export default function CompaniesList() {
         "Tech AlphaLogix Pvt. Ltd. is a technology-oriented company specializing in web development and design....",
       domains: [
         "Web Development",
-        "UI/UX Design",
-        "SaaS Development",
-        "Social media marketing",
-        "Mobile Development",
         "Graphic Design",
-        "Data Science",
+        "Data Analytics",
+        "Social Media marketing",
+        "Mobile App Development",
         "BlockChain Development",
         "CMS Development",
         
@@ -302,10 +301,10 @@ export default function CompaniesList() {
                     onClick={() => toggleDomains(index)}
                       target="_blank"
                       rel="norefferer"
-                      className="text-[#2947A9] leading-[18.77px] text-center  border-2 border-[#2947A9] px-[10px] md:px-[12x]  rounded-md  py-[7px] cursor-pointer mt-[5px] mb-[5px]"
+                      className="text-[#2947A9] leading-[18.77px] text-center  font-normal px-[10px] md:px-[12x]    py-[7px] cursor-pointer mt-[5px] mb-[5px]"
                      
                     >
-                      See More
+                      See More...
                     </a>
                      )}
                       {expandedDomains[index] && (
@@ -320,7 +319,7 @@ export default function CompaniesList() {
               ))}
               <a
                 onClick={() => toggleDomains(index)}
-                className="text-[#2947A9] leading-[18.77px] text-center border-2 border-[#2947A9] px-[10px] md:px-[12x]  rounded-md  py-[7px] cursor-pointer mt-[5px] mb-[5px]"
+                className="text-[#2947A9] leading-[18.77px] text-center font-normal  px-[10px] md:px-[12x]    py-[7px] cursor-pointer mt-[5px] mb-[5px]"
               >
                 See Less
               </a>

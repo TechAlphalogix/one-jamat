@@ -7,12 +7,12 @@ export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
   const [experience, setExperience] = useState('Experienced');
   const [region, setRegion] = useState('Gilgit');
-  const [searchResults, setSearchResults] = useState([]);
-
+  // const [searchResults, setSearchResults] = useState([]);
 
   const handleSearch = () => {
-    
+
   };
+
 
   return (
     <>
@@ -68,7 +68,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <CompaniesList />
+      <CompaniesList/>
     </>
   );
 }
