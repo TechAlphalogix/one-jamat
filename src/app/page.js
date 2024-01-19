@@ -30,7 +30,7 @@ export default function Home() {
         <div className='container   w-[95%] md:h-[65vh] justify-center items-center flex  flex-col space-y-4 mx-auto lg:flex-col px-6 pb-8 pt-8 sm:pt-10 lg:px-8 lg:pt-[70px]'>
           <div className='hero-top flex  flex-col space-y-2'>
             <div>
-              <h1 className='font-semibold text-5xl leading-[50px] md:text-[72px] md:leading-[84.46px] text-center py-12 md:mx-auto md:flex lg:w-[100%]'>One Jamat IT Companies</h1>
+              <h1 className='font-semibold text-5xl leading-[50px] md:text-[72px] md:leading-[84.46px] text-center py-8 md:mx-auto md:flex lg:w-[100%]'>One Jamat IT Companies</h1>
             </div>
           </div>
           <div className='bg-white py-6 px-6 md:space-y-0 space-y-2 justify-around items-center flex flex-col md:flex-row w-full'>
