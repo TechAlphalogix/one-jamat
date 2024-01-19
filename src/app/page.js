@@ -7,22 +7,30 @@ export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
   const [experience, setExperience] = useState('Experienced');
   const [region, setRegion] = useState('Gilgit');
-  // const [searchResults, setSearchResults] = useState([]);
+  const [searchResults, setSearchResults] = useState([]);
+
 
   const handleSearch = () => {
-
+    // adding console for all above to check
+    console.log('Search term:', searchTerm);
+    console.log('Experience:', experience);
+    console.log('Region:', region);
+   
+    try {
+    
+      setSearchResults(data);
+    } catch (error) {
+      console.error('Error fetching search results:', error);
+    }
   };
-
 
   return (
     <>
-
       <header className='bg-[url("../../public/bg-big.jpg")] text-white '>
-       
         <div className='container   w-[95%] md:h-[65vh] justify-center items-center flex  flex-col space-y-4 mx-auto lg:flex-col px-6 pb-8 pt-8 sm:pt-10 lg:px-8 lg:pt-[70px]'>
           <div className='hero-top flex  flex-col space-y-2'>
             <div>
-              <h1 className='font-semibold text-5xl leading-[50px] md:text-[72px] md:leading-[84.46px] text-center md:mx-auto md:flex lg:w-[90%]'>One Jamat Software Companies</h1>
+              <h1 className='font-semibold text-5xl leading-[50px] md:text-[72px] md:leading-[84.46px] text-center md:mx-auto md:flex lg:w-[90%]'>One Jamat IT Companies</h1>
             </div>
           </div>
           <div className='bg-white py-6 px-6 md:space-y-0 space-y-2 justify-around items-center flex flex-col md:flex-row w-full'>
@@ -72,3 +80,7 @@ export default function Home() {
     </>
   );
 }
+
+
+
+
