@@ -17,6 +17,12 @@ import Home from "@/app/page";
 export default function CompaniesList() {
   // function for see more button
   const [expandedDomains, setExpandedDomains] = useState({});
+  const [filteredCompanies, setFilteredCompanies] = useState(null);
+  const [domain, setDomain] = useState("");
+  const [experience, setExperience] = useState('Experienced');
+  const [region, setRegion] = useState('Gilgit');
+
+
 
 
   const toggleDomains = (companyIndex) => {
@@ -44,6 +50,8 @@ export default function CompaniesList() {
         "HR Management",
         "SaaS Developement"
       ],
+      experience: "Intermediate",  
+      regions: "Gilgit",
       link: "https://www.calibreon.com.pk/",
       link1: "https://google.com",
     },
@@ -64,6 +72,8 @@ export default function CompaniesList() {
 
         
       ],
+      experience: "Intermediate",  
+      regions: "Gilgit",
       link: "https://www.ideometrix.com/",
       link1:
         "https://drive.google.com/file/d/1gboqADLwD-2g9VmhP0z1jOGJFLe4wvgP/view?usp=sharing"
@@ -86,6 +96,8 @@ export default function CompaniesList() {
 
 
       ],
+      experience: "Intermediate",  
+      regions: "Gilgit",
       link: "http://uconnect.pk/",
       link1:
         "https://drive.google.com/file/d/1Vuo92FOr6AOPeEtV2gfPzCdZe9pnhsuA/view",
@@ -101,6 +113,8 @@ export default function CompaniesList() {
         "CMS Development",
         "UI/UX Design",
       ],
+      experience: "Intermediate",  
+      regions: "Gilgit",
       link: "https://www.pine-technologies.com/",
       link1:
         "https://drive.google.com/file/d/1_JZiOFM3nkLl5eWF6ueJWgJFbRVF8GBD/view",
@@ -120,6 +134,8 @@ export default function CompaniesList() {
         "CMS Development",
         
       ],
+      experience: "Intermediate",  
+      regions: "Gilgit",
       link: "https://techalphalogix.com/",
       link1:
         "https://drive.google.com/file/d/1bUeWPsYo6Plsenoj05ql57hXb9e87bgL/view",
@@ -139,6 +155,8 @@ export default function CompaniesList() {
         "Web Development",
 
       ],
+      experience: "Intermediate",  
+      regions: "Gilgit",
       link: "https://techzoid.pk/",
       link1:
         "https://drive.google.com/file/d/1K5vts4n1U5anICZG-ys7UIxnwzazVJRH/view",
@@ -155,9 +173,9 @@ export default function CompaniesList() {
         "UI/UX Design",
         "Web Development",
         "App Development",
-
-
       ],
+      experience: "Basic",  
+      regions: "Gilgit",
       link: "https://designbytesinternational.com/",
       link1:
         "https://drive.google.com/file/d/1Vu0HrerUfTesZgbOZlp5SQOCsI5aJ4pr/view",
@@ -176,6 +194,8 @@ export default function CompaniesList() {
         "Graphic Design",    
 
       ],
+      experience: "Intermediate",  
+      regions: "Gilgit",
       link: "https://techscape.pk/",
       link1:
         "https://drive.google.com/file/d/1lNdJCPSNKBGSXTNnQ_wVZepCujoccfeE/view",
@@ -195,6 +215,8 @@ export default function CompaniesList() {
         "Data Administration",
 
       ],
+      experience: "Intermediate",  
+      regions: "Gilgit",
       link: "http://www.cloudlem.com",
       link1:
         "https://drive.google.com/file/d/1ZsrYNDvIWrhFXdIeHeMsQYs7CDRLspOc/view?usp=drive_open",
@@ -208,9 +230,12 @@ export default function CompaniesList() {
          "Bookkeeping", 
          "Tax Services"
         ],
+        experience: "Intermediate",  
+        regions: "Gilgit",
+
       link: "http://www.standardizedaccounting.com",
       link1:
-      // adding profile link
+      // adding profile link remaining
         "",
     },
     {
@@ -227,16 +252,30 @@ export default function CompaniesList() {
         "SEO",
         "Social Media Marketing",
         'IT Support Maintainace',
-
-
       ],
+      experience: "Basic",  
+      regions:  "Gilgit",
       link: "https://shedev.pk/",
       link1:
         "https://drive.google.com/file/d/1wtzsuBOj5Op7WLCxsHHKjEdmX9Na0ShL/view?usp=sharing",
     },
   ];
- 
+// start functionalty
+  const handleSearch = () => {
+    const filteredData = companyData.filter((company) =>
+      company.domains.some((d) => d.toLowerCase().includes(domain.toLowerCase())) 
+      &&
+      ((experience === 'Basic' && company.experience === 'Basic') ||
+        (experience === 'Intermediate' && company.experience === 'Intermediate')) &&
+      (region === 'All' || company.regions.includes(region))
 
+    );
+    setFilteredCompanies(filteredData);
+  };
+
+  const displayCompanies = filteredCompanies || companyData;
+ 
+// end
   const companyLogos = {
     IdeoMatrix: IMX,
     Techalphalogix: Alpha,
@@ -254,6 +293,61 @@ export default function CompaniesList() {
   return (
     
     <section className="bg-[#F6F8F7]">
+      {/* this is testing code */}
+      
+      <header className='bg-[url("../../public/bg-big.jpg")] text-white '>
+       
+       <div className='container   w-[95%] md:h-[65vh] justify-center items-center flex  flex-col space-y-4 mx-auto lg:flex-col px-6 pb-8 pt-8 sm:pt-10 lg:px-8 lg:pt-[70px]'>
+         <div className='hero-top flex  flex-col space-y-2'>
+           <div>
+             <h1 className='font-semibold text-5xl leading-[50px] md:text-[72px] md:leading-[84.46px] text-center md:mx-auto md:flex lg:w-[90%]'>One Jamat IT Companies</h1>
+           </div>
+         </div>
+         <div className='bg-white py-6 px-6 md:space-y-0 space-y-2 justify-around items-center flex flex-col md:flex-row w-full'>
+           <div className='md:w-[50%] w-full'>
+             <input
+               type='search'
+               className='bg-white border w-full py-3 px-2 border-gray-400 rounded-lg text-gray-800 focus:outline-none'
+               placeholder='Search for domain like UX Design, Graphic Design, web dev etc'
+               value={domain}
+               onChange={(e) => setDomain(e.target.value)}
+             />
+           </div>
+           
+           <div className='md:w-[15%] mt-0 w-full'>
+             <select
+               className='py-3 px-2 w-full bg-white focus:outline-none text-slate-500 border border-gray-400 rounded-lg'
+               name='Experience'
+               id='Experience'
+               value={experience}
+               onChange={(e) => setExperience(e.target.value)}
+             >
+               <option value='Experienced'>Experienced</option>
+               <option value='Basic'>Basic</option>
+               <option value='Intermediate'>Intermediate</option>
+             </select>
+           </div>
+           <div className='md:w-[15%] mt-0 w-full'>
+             <select
+               className='py-3 px-2 w-full bg-white focus:outline-none text-slate-500 border border-gray-400 rounded-lg'
+               name='Region'
+               id='Region'
+               value={region}
+               onChange={(e) => setRegion(e.target.value)}
+             >
+               <option value='Gilgit'>Gilgit</option>
+               <option value='Islamabad'>Islamabad</option>
+             </select>
+           </div>
+           <div className='md:w-[15%] mt-0 flex justify-center items-center w-full'>
+             <button className='rounded-[8px] bg-[#2947A9] text-white py-[7px] px-[47px]' onClick={handleSearch}>
+               Search
+             </button>
+           </div>
+         </div>
+       </div>
+     </header>
+      {/* end */}
       
       <div className="container mx-auto lg:flex-row px-6 pb-8 pt-8 sm:pt-10 lg:px-8 lg:pt-[70px]">
         <div className="heading-top text-center">
@@ -263,7 +357,8 @@ export default function CompaniesList() {
         </div>
         <div className="companies">
           <div className="flex flex-wrap ">
-            {companyData.map((company, index) => (
+            {/* adding new variable */}
+            {displayCompanies.map((company, index) => (
               <div
                 key={index}
                 className="w-full mx-auto bg-white shadow-2xl p-[20px] rounded-[4px]  flex flex-col xl:flex-row my-1 sm:w-full  md:w-full md:my-1  lg:w-[49%] "

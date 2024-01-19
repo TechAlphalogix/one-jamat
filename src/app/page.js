@@ -1,32 +1,22 @@
 "use client"
-import { useState } from 'react';
+// import { useState } from 'react';
 import CompaniesList from '@/components/companies/com';
 import Image from 'next/image';
 
 export default function Home() {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [experience, setExperience] = useState('Experienced');
-  const [region, setRegion] = useState('Gilgit');
-  const [searchResults, setSearchResults] = useState([]);
+  // const [searchTerm, setSearchTerm] = useState('');
+  // const [experience, setExperience] = useState('Experienced');
+  // const [region, setRegion] = useState('Gilgit');
+  // const [searchResults, setSearchResults] = useState([]);
 
 
-  const handleSearch = () => {
-    // adding console for all above to check
-    console.log('Search term:', searchTerm);
-    console.log('Experience:', experience);
-    console.log('Region:', region);
+  // const handleSearch = () => {
    
-    try {
-    
-      setSearchResults(data);
-    } catch (error) {
-      console.error('Error fetching search results:', error);
-    }
-  };
+  // };
 
   return (
     <>
-      <header className='bg-[url("../../public/bg-big.jpg")] text-white '>
+      {/* <header className='bg-[url("../../public/bg-big.jpg")] text-white '>
         <div className='container   w-[95%] md:h-[65vh] justify-center items-center flex  flex-col space-y-4 mx-auto lg:flex-col px-6 pb-8 pt-8 sm:pt-10 lg:px-8 lg:pt-[70px]'>
           <div className='hero-top flex  flex-col space-y-2'>
             <div>
@@ -69,14 +59,17 @@ export default function Home() {
               </select>
             </div>
             <div className='md:w-[15%] mt-0 flex justify-center items-center w-full'>
-              <button className='rounded-[8px] bg-[#2947A9] text-white py-[7px] px-[47px]' onClick={handleSearch}>
+              <button className='rounded-[8px] bg-[#2947A9] text-white py-[7px] px-[47px]' >
                 Search
               </button>
             </div>
           </div>
         </div>
-      </header>
-      <CompaniesList/>
+      </header>  */}
+      <CompaniesList />
+
+
+      
     </>
   );
 }
