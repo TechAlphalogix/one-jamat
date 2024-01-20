@@ -138,7 +138,7 @@ export default function CompaniesList() {
       regions: "Gilgit",
       link: "https://techalphalogix.com/",
       link1:
-        "https://drive.google.com/file/d/1bUeWPsYo6Plsenoj05ql57hXb9e87bgL/view",
+        "https://drive.google.com/file/d/1kIdjzCja-3UylW4SU8DfCg5v3CWZZkO8/view?usp=sharing",
     },
     {
       name: "Techzoid",
