@@ -14,7 +14,7 @@ const work = Work_Sans({
 
 export const metadata = {
   title: 'One Jamat',
-  description: 'One jamat Software companies... continue',
+  description: 'One jamat IT companies... continue',
 
   keywords: ['keyword1', 'keywords2'],
   author: 'Ali Shan',
