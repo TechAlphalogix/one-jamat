@@ -102,7 +102,7 @@ export const  companyData =
         "regions": "Gilgit",
         "link": "https://techalphalogix.com/",
         "link1":
-          "https://drive.google.com/drive/folders/15lRkgb_-sEyy5ZG4fM_DyGL5tZxkasr1"
+          "https://drive.google.com/file/d/1kIdjzCja-3UylW4SU8DfCg5v3CWZZkO8/view?usp=sharing"
       },
       {
         "name": "Techzoid",

@@ -30,7 +30,6 @@ export default function CompaniesList() {
     }));
   };
 
-// data shuffled automatically
   const shuffledCompanyData = shuffleArray(companyData);
 
   // start functionalty
