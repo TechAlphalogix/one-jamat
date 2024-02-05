@@ -19,7 +19,7 @@ export const  companyData =
         "regions": "Gilgit",
         "link": "https://www.calibreon.com.pk/",
         // "link1": "https://google.com",
-        "link1": "https://drive.google.com/drive/folders/15lRkgb_-sEyy5ZG4fM_DyGL5tZxkasr1"
+        "link1": "https://drive.google.com/file/d/1d-bULesYuMWiLWwjngTdP10ECfZc6ulP/view"
         
     }, 
      {
