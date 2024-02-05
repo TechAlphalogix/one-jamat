@@ -3,6 +3,7 @@ import { useState } from "react";
 
 import { companyData } from '../../data'
 import { companyLogos } from '../../logoData';
+import AutoComplete from "../../components/autocomplete/AutoComplete"
 
 const shuffleArray = (array) => {
   let shuffledArray = array.slice();
@@ -45,6 +46,19 @@ export default function CompaniesList() {
       setFilteredCompanies(filteredData);
     };
     const displayCompanies = filteredCompanies || shuffledCompanyData;
+
+    const cityNames = [
+      "Web development",
+      "Web Design",
+      "UI UX",
+      "Graphic design",
+      "Web flow",
+      "web application",
+      "Data Analysis",
+      "Digital Marketing",
+      "Flutter",
+      
+    ];
   
  
   return (
@@ -61,14 +75,14 @@ export default function CompaniesList() {
        </div>
        <div className='bg-white py-6 px-6 md:space-y-0 space-y-2 justify-around items-center flex flex-col md:flex-row w-full'>
          <div className='md:w-[50%] w-full'>
-           <input
+           {/* <input
              type='search'
              className='bg-white border w-full py-3 px-2 border-gray-400 rounded-lg text-gray-800 focus:outline-none'
              placeholder='Search for domain like UX Design, Graphic Design, web dev etc'
              value={domain}
              onChange={(e) => setDomain(e.target.value)}
-           />
-          
+           /> */}
+          <AutoComplete options={cityNames} className="w-[960px]" />
          </div>
          
          <div className='md:w-[15%] mt-0 w-full'>
