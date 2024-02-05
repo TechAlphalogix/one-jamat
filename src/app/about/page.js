@@ -41,7 +41,7 @@ export default function About() {
                     <p className="font-normal text-[20px] leading-[23px]">
                         Legacy of Innovation: Our featured companies boast a rich legacy of innovation, contributing significantly to the ever-evolving field of software development. With a track record that spans a decade, they stand as pioneers in leveraging technology to drive business success.<br /><br />
 
-                        Multifaceted Expertise: From crafting cutting-edge software solutions to curating visually stunning UX designs, our showcased companies encompass a wide spectrum of expertise. Whether it's digital marketing strategies that resonate or graphic designs that captivate, these companies are adept at turning concepts into reality.<br /><br />
+                        Multifaceted Expertise: From crafting cutting-edge software solutions to curating visually stunning UX designs, our showcased companies encompass a wide spectrum of expertise. Whether it&apos;s digital marketing strategies that resonate or graphic designs that captivate, these companies are adept at turning concepts into reality.<br /><br />
 
                         Cultural Fusion: Nestled in the picturesque Gilgit Baltistan, our featured companies represent a harmonious blend of traditional values and modern technology. This fusion not only defines their work but also adds a unique touch to every project they undertake.
                     </p>
@@ -52,7 +52,7 @@ export default function About() {
                         Join the Journey:
 
                     </h2>
-                    <p className="font-normal text-[20px] leading-[23px]">As you explore [Your Website Name], we invite you to delve into the stories of these remarkable companies. Learn about their journey, discover their specializations, and witness the impact of their work on the global stage. Whether you are seeking a software development partner, a digital marketing expert, or a creative force for graphic and UX design, you'll find it all within the realms of Gilgit Baltistan.
+                    <p className="font-normal text-[20px] leading-[23px]">As you explore [Your Website Name], we invite you to delve into the stories of these remarkable companies. Learn about their journey, discover their specializations, and witness the impact of their work on the global stage. Whether you are seeking a software development partner, a digital marketing expert, or a creative force for graphic and UX design, you&apos;ll find it all within the realms of Gilgit Baltistan.
 
                     </p>
                 </div>
