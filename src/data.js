@@ -18,9 +18,11 @@ export const  companyData =
         "experience":  "Intermediate",
         "regions": "Gilgit",
         "link": "https://www.calibreon.com.pk/",
-        "link1": "https://google.com"
+        // "link1": "https://google.com",
+        "link1": "https://drive.google.com/drive/folders/15lRkgb_-sEyy5ZG4fM_DyGL5tZxkasr1"
         
-    },  {
+    }, 
+     {
         "name": "IdeoMatrix",
         "description":
           "IdeoMetriX, founded in 2020, has rapidly evolved into a dynamic design and tech firm with a global footprint. In its three-year....",
