@@ -63,7 +63,6 @@ export default function CompaniesList() {
  
   return (
     <section className="bg-[#F6F8F7]">
-    {/* this is testing code */}
     
     <header className='bg-[url("../../public/bg-big.jpg")] text-white '>
      
@@ -75,13 +74,7 @@ export default function CompaniesList() {
        </div>
        <div className='bg-white py-6 px-6 md:space-y-0 space-y-2 justify-around items-center flex flex-col md:flex-row w-full'>
          <div className='md:w-[50%] w-full'>
-           {/* <input
-             type='search'
-             className='bg-white border w-full py-3 px-2 border-gray-400 rounded-lg text-gray-800 focus:outline-none'
-             placeholder='Search for domain like UX Design, Graphic Design, web dev etc'
-             value={domain}
-             onChange={(e) => setDomain(e.target.value)}
-           /> */}
+          
           <AutoComplete options={cityNames} className="w-[960px]" />
          </div>
          
@@ -118,7 +111,7 @@ export default function CompaniesList() {
        </div>
      </div>
    </header>
-    {/* end */}
+  
     
     <div className="container mx-auto lg:flex-row px-6 pb-8 pt-8 sm:pt-10 lg:px-8 lg:pt-[70px]">
       <div className="heading-top text-center">
@@ -128,7 +121,8 @@ export default function CompaniesList() {
       </div>
       <div className="companies">
         <div className="flex flex-wrap ">
-          {/* adding new variable */}
+          
+
           {displayCompanies.map((company, index) => (
             <div
               key={index}

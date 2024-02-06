@@ -20,7 +20,7 @@ export  const companyLogos = {
     Techscape: TSC,
     Cloudlem: CLD,
     Uconnect: UCO,
-    Caliberon: CALI,
+    Calibreon: CALI,
     SASI: SASI,
     SheDev: SHEDEV,
   }

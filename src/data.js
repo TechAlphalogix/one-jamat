@@ -2,7 +2,7 @@
 export const  companyData = 
  [
     {
-        "name": "CalibreOn",
+        "name": "Calibreon",
         "description": "CalibreOn International is a prominent figure in the Business Process Outsourcing (BPO) sector, on a mission....",
         "domains": [
             "Accounting",
@@ -18,7 +18,6 @@ export const  companyData =
         "experience":  "Intermediate",
         "regions": "Gilgit",
         "link": "https://www.calibreon.com.pk/",
-        // "link1": "https://google.com",
         "link1": "https://drive.google.com/file/d/1d-bULesYuMWiLWwjngTdP10ECfZc6ulP/view"
         
     }, 
