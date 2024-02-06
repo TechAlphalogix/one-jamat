@@ -47,7 +47,7 @@ export default function CompaniesList() {
     };
     const displayCompanies = filteredCompanies || shuffledCompanyData;
 
-    const cityNames = [
+    const domains = [
       "Web development",
       "Web Design",
       "UI UX",
@@ -82,7 +82,7 @@ export default function CompaniesList() {
              value={domain}
              onChange={(e) => setDomain(e.target.value)}
            /> */}
-          <AutoComplete options={cityNames} className="w-[960px]" />
+          <AutoComplete options={domains} className="w-[960px]" />
          </div>
          
          <div className='md:w-[15%] mt-0 w-full'>

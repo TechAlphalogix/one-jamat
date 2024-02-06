@@ -3,7 +3,7 @@
 
 import { useState, useEffect, useRef } from "react";
 
-const AutoComplete = ({ options = ["Oranges", "Apples", "Pearls"] }) => {
+const AutoComplete = ({ options = ["web dev", "UI/UX", "Graphics"] }) => {
     const [value, setValue] = useState("");
     const [showSuggestions, setShowSuggestions] = useState(false);
     const suggestions = options.filter(option => option.toLowerCase().includes(value.toLowerCase()));
