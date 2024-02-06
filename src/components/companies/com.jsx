@@ -23,7 +23,7 @@ export default function CompaniesList() {
   const [expandedDomains, setExpandedDomains] = useState({});
 
 
-
+// bla bla
   const toggleDomains = (companyIndex) => {
     setExpandedDomains((prev) => ({
       ...prev,
