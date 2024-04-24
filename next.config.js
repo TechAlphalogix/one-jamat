@@ -1,8 +1,15 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+// next.config.js
+
+module.exports = {
   images: {
-    domains: ["drive.google.com"],
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "drive.google.com",
+        port: "",
+        pathname: "/uc/**",
+      },
+    ],
   },
 };
-
-module.exports = nextConfig;
