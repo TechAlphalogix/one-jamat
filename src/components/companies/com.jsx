@@ -5,7 +5,7 @@ const Papa = require("papaparse");
 import AutoComplete from "../../components/autocomplete/AutoComplete";
 import Loader from "../loader/loader";
 import { formatCompaniesDataTOJSON } from "@/utils";
-
+import { companyLogos } from "../../logoData";
 const shuffleArray = (array) => {
   let shuffledArray = array.slice();
   for (let i = shuffledArray.length - 1; i > 0; i--) {
@@ -212,7 +212,7 @@ export default function CompaniesList() {
                   <div className="logo flex h-[150px] xl:h-auto  justify-center items-center bg-slate-100 w-full xl:w-2/5">
                     <Image
                       className="hover:scale-110 transition-all"
-                      src={company.logo}
+                      src={companyLogos[company.name]}
                       alt={company.name}
                       width={136}
                       height={30}
