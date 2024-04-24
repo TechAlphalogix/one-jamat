@@ -1,7 +1,10 @@
 const formatImageLink = (url) => {
   var match = url.match(/\/d\/([^\/]+)/);
   var fileId = match ? match[1] : null;
-  return `https://drive.google.com/uc?export=download&id=${fileId}`;
+    return `https://drive.google.com/uc?export=download&id=${fileId}`;
+//   return `https://drive.google.com/uc?export=view&id=${fileId}`;
+  // return `https://drive.google.com/thumbnail?id=${fileId}`
+  // return `https://drive.google.com/thumbnail?id=${fileId}&sz=w1000`
 };
 
 export const formatCompaniesDataTOJSON = (companies) => {
