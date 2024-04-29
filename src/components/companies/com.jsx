@@ -210,16 +210,14 @@ export default function CompaniesList() {
                   className="w-full mx-auto bg-white shadow-2xl p-[20px] rounded-[4px]  flex flex-col xl:flex-row my-1 sm:w-full  md:w-full md:my-1  lg:w-[49%] "
                 >
                   <div className="logo flex h-[150px] xl:h-auto  justify-center items-center bg-slate-100 w-full xl:w-2/5">
-                    <div className="h-[80px]">
-                      <Image
-                        className="hover:scale-110 transition-all"
-                        src={companyLogos[company.name]}
-                        alt={company.name}
-                        width={136}
-                        height={100}
-                        style={{ height: "100%" }}
-                      />
-                    </div>
+                    <Image
+                      className="hover:scale-110 transition-all"
+                      src={companyLogos[company.name]}
+                      alt={company.name}
+                      width={136}
+                      height={100}
+                      style={{ height: "100%" }}
+                    />
                   </div>
                   <div className="info ps-[10px]  w-full xl:w-3/5 ">
                     <h3 className="font-semibold text-[24px]  pt-[5px] leading-[28px]">
