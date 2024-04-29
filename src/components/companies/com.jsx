@@ -212,11 +212,10 @@ export default function CompaniesList() {
                   <div className="logo flex h-[150px] xl:h-auto  justify-center items-center bg-slate-100 w-full xl:w-2/5">
                     <Image
                       className="hover:scale-110 transition-all"
-                      src={companyLogos[company.name]}
+                      src={company.logo}
                       alt={company.name}
                       width={136}
                       height={100}
-                      style={{ height: "100%" }}
                     />
                   </div>
                   <div className="info ps-[10px]  w-full xl:w-3/5 ">
